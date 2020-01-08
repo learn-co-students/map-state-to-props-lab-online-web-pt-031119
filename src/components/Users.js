@@ -5,12 +5,12 @@ class Users extends Component {
   render() {
     return (
       <div>
+        <p>{this.props.userCount}</p>
         <ul>
           Users!
           {this.props.users.map(user => {
             return(<li>{user.username}</li>)
           })}
-          <li>{this.props.userCount}</li>
         </ul>
       </div>
     )
